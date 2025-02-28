@@ -18,7 +18,7 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/your-repo/google-sheets-clone.git
+git clone https://github.com/Shalini1124/Google-Sheet.git
 cd google-sheets-clone
 
 ::Install dependencies----

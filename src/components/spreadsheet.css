@@ -1,0 +1,173 @@
+.spreadsheet-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	font-family: Arial, sans-serif;
+	border: 1px solid green;
+  }
+  
+  /* Toolbar Styles */
+  .toolbar {
+	display: flex;
+	padding: 8px;
+	background-color: #f3f3f3;
+	border-bottom: 1px solid green;
+	align-items: center;
+  }
+  
+  .toolbar-section {
+	display: flex;
+	margin-right: 16px;
+	align-items: center;
+  }
+  
+  .toolbar-button {
+	height: 28px;
+	width: 28px;
+	margin: 0 2px;
+	background-color: white;
+	border: 1px solid green;
+	border-radius: 2px;
+	cursor: pointer;
+  }
+  
+  .toolbar-button:hover {
+	background-color: white;
+  }
+  
+  .toolbar-button.active {
+	background-color: #e8f0fe;
+	border-color: #4285f4;
+  }
+  
+  .toolbar-select {
+	height: 28px;
+	border: 1px solid green;
+	border-radius: 2px;
+	padding: 0 8px;
+	margin: 0 2px;
+	background-color: white;
+  }
+  
+  .function-select {
+	min-width: 120px;
+  }
+  
+  .color-picker-container {
+	display: flex;
+	align-items: center;
+	margin: 0 4px;
+  }
+  
+  .color-picker-container span {
+	font-size: 12px;
+	margin-right: 4px;
+  }
+  
+  .toolbar-color-picker {
+	width: 24px;
+	height: 24px;
+	border: none;
+	padding: 0;
+	background: none;
+	cursor: pointer;
+  }
+  
+  
+  .cell-reference {
+	padding: 4px 8px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666;
+	border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Formula Bar */
+  .formula-bar {
+	display: flex;
+	padding: 4px;
+	background-color: #f3f3f3;
+	border-bottom: 1px solid #e0e0e0;
+	align-items: center;
+  }
+  
+  .formula-icon {
+	font-size: 14px;
+	font-weight: bold;
+	color: #5f6368;
+	padding: 0 8px;
+  }
+  
+  .formula-input {
+	flex: 1;
+	height: 28px;
+	border: 1px solid #dadce0;
+	border-radius: 2px;
+	padding: 0 8px;
+  }
+  
+  /* Table Container */
+  .table-container {
+	flex: 1;
+	overflow: auto;
+  }
+  
+  /* Spreadsheet Table */
+  .spreadsheet-table {
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: auto;
+	min-width: 100%;
+  }
+  
+  .corner-header {
+	width: 40px;
+	background-color: #f3f3f3;
+	border: 1px solid green;
+  }
+  
+  .column-header {
+	min-width: 80px;
+	height: 25px;
+	background-color: #f3f3f3;
+	border: 1px solid green;
+	text-align: center;
+	font-weight: normal;
+	color: #5f6368;
+  }
+  
+  .row-header {
+	height: 25px;
+	background-color: #f3f3f3;
+	border: 1px solid green;
+	text-align: center;
+	font-weight: normal;
+	color: #5f6368;
+  }
+  
+  .spreadsheet-cell {
+	height: 25px;
+	min-width: 80px;
+	border: 1px solid green;
+	padding: 0 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+  
+  .spreadsheet-cell.selected {
+	position: relative;
+	border: 2px solid #4285f4;
+	outline: none;
+  }
+  
+  .spreadsheet-cell.selected::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 6px;
+	height: 6px;
+	background-color: #4285f4;
+	cursor: nwse-resize;
+  }
